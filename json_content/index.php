@@ -21,10 +21,13 @@
 			break;
 
 		case "news-msg":
-			$array["id"] = time();
+			$array["id"] = 1;
 			$array["title"] = "some awesome title";
 			$array["text"] = "some awesome text";
 			$array["link"] = null; //or "redirect to" link key
+			$array["backgroundImage"] = true; //references ../data/server-note/img/[id]-background-image.png
+			$array["image"] = true; //references ../data/server-note/img/[id]-image.png
+			$array["imageLink"] = null; //or "redirect to" link key
 			$array["validUntil"] = time() * 2; //unix timestamp
 			break;
 
