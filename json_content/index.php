@@ -8,6 +8,10 @@
 
 	switch ($key) {
 
+		case "about":
+			$array = ["this", "is", "about", "us"];
+			break;
+
 		case "privacy":
 			$array = ["we", "love", "privacy"];
 			break;
