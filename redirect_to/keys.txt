@@ -1,0 +1,8 @@
+download_android
+download_fdroid
+download_snap
+download_windows
+moroweb
+source_code
+source_code_appoc
+translations
