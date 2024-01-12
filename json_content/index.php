@@ -21,7 +21,13 @@ switch ($key) {
 		break;
 
 	case "webpics":
-		$array = null;
+		$array["pics"] = array(); //or null for none
+		$array["pics"][0] = array();
+		$array["pics"][0]["urls"] = array();
+		$array["pics"][0]["urls"]["thumb"] = array();
+		$array["pics"][0]["urls"]["thumb"]["url"] = "https://herrmann-engel.de/projekte/moroway/data/pics/thumb/P1090351.JPG"; //image source
+		$array["pics"][0]["links"] = array();
+		$array["pics"][0]["links"]["normal"] = "https://herrmann-engel.de/projekte/moroway/fotos/5/P1090351.JPG"; //image link
 		break;
 
 	case "news-msg":
