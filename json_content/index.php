@@ -22,12 +22,14 @@ switch ($key) {
 
 	case "webpics":
 		$array["pics"] = array(); //or null for none
-		$array["pics"][0] = array();
-		$array["pics"][0]["urls"] = array();
-		$array["pics"][0]["urls"]["thumb"] = array();
-		$array["pics"][0]["urls"]["thumb"]["url"] = "https://herrmann-engel.de/projekte/moroway/data/pics/thumb/P1090351.JPG"; //image source
-		$array["pics"][0]["links"] = array();
-		$array["pics"][0]["links"]["normal"] = "https://herrmann-engel.de/projekte/moroway/fotos/5/P1090351.JPG"; //image link
+		for ($i = 0; $i < 3; $i++) {
+			$array["pics"][$i] = array();
+			$array["pics"][$i]["urls"] = array();
+			$array["pics"][$i]["urls"]["thumb"] = array();
+			$array["pics"][$i]["urls"]["thumb"]["url"] = "https://raw.githubusercontent.com/MOROway/moroway-app-server-samples/main/sample_media/" . $i . ".jpg"; //image source
+			$array["pics"][$i]["links"] = array();
+			$array["pics"][$i]["links"]["normal"] = "https://github.com/MOROway/moroway-app-server-samples/tree/main/sample_media/" . $i . ".jpg"; //image link
+		}
 		break;
 
 	case "news-msg":
